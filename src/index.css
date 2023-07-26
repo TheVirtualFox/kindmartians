@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+
+  --background-color: #eaeff4;
+  --accent-color: #2a67bc;
+  --secondary-color: #9fa628;
+  --error-color: #911;
+  --secondary-background-color: #251332;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 1px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  background: #eaeff4;
+  background-color: #fff;
+}
+
+body:before {
+  content: "";
+  transform: skew(0, -7deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -130px;
+  height: 500px;
+  background: var(--secondary-background-color);
+}
+
+@media (min-width: 575.98px) {
+  body:before {
+    background: var(--accent-color);
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: var(--secondary-color);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}

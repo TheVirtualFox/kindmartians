@@ -1,0 +1,14 @@
+.logo {
+  font-weight: 100;
+  text-align: start;
+  color: var(--secondary-color);
+  margin-bottom: 36px;
+  font-size: 30px;
+}
+
+.logo span {
+  font-weight: 900;
+  color: var(--accent-color);
+  display: block;
+  line-height: 30px;
+}
