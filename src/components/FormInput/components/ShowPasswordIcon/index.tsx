@@ -23,6 +23,7 @@ export const ShowPasswordIcon = ({
       type="button"
       className={`${className} ${styles.icon}`}
       onClick={onPasswordClick}
+      aria-label="hide or show password"
     >
       {isHidden ? <EyeIcon key="EyeIcon" /> : <EyeSlashIcon key="EyeSlashIcon" />}
     </button>

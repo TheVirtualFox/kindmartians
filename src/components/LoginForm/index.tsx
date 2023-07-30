@@ -80,7 +80,7 @@ export const LoginForm = () => {
               placeholder="Password"
               type="password"
             />
-            <Button isLoading={isLoading} type="submit">
+            <Button isLoading={isLoading} type="submit" ariaLabel="Sign In">
               Sign In
             </Button>
           </form>
