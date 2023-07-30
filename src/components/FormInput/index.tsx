@@ -55,6 +55,7 @@ export const FormInput = <T extends FieldValues>({
           type={isHidden ? type : "text"}
           id={name}
           autoComplete="off"
+          aria-label={label}
         />
         <ShowPasswordIcon
           className={styles.icon}
