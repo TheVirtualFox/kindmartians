@@ -22,6 +22,8 @@ const schema = yup
   })
   .required();
 
+const DEF_SIGN_MESSAGE = "Sign";
+
 export const LoginForm = () => {
   const {
     register,
@@ -50,7 +52,7 @@ export const LoginForm = () => {
         <div className={styles.martianContainer}>
           <Martian
             state={state}
-            message={data && "Sign"}
+            message={data && DEF_SIGN_MESSAGE}
             error={error?.message ?? null}
           />
         </div>

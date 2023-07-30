@@ -24,7 +24,7 @@ export const ShowPasswordIcon = ({
       className={`${className} ${styles.icon}`}
       onClick={onPasswordClick}
     >
-      {isHidden ? <EyeIcon /> : <EyeSlashIcon />}
+      {isHidden ? <EyeIcon key="EyeIcon" /> : <EyeSlashIcon key="EyeSlashIcon" />}
     </button>
   );
 };
